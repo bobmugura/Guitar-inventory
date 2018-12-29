@@ -1,0 +1,33 @@
+{
+  "name": "guitar-inventory",
+  "version": "1.0.0",
+  "description": "Typescript guitar inventory app using Vue, Materialize on the frontend and Node.js with Express, PostgreSQL on the backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobmugura/guitar-inventory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobmugura/guitar-inventory/issues"
+  },
+  "homepage": "https://github.com/bobmugura/guitar-inventory#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.12.18",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  }
+}
